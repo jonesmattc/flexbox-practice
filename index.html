@@ -13,10 +13,18 @@
 				border: 2px black solid;
 				flex-grow: 1;
 				margin: auto;
-				flex-basis: 200px;
+				flex-basis: 300px;
 			}
 			.three {
 				flex-grow: 1;
+			}
+			@media all and (max-width: 300px) {
+				.container {
+					flex-direction: column;
+				}
+				.item {
+					flex-basis: 150px;
+				}
 			}
 		</style>
 	</head>
